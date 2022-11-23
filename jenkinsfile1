@@ -9,7 +9,8 @@ pipeline {
                 test()
             }
           }
-        }
+      
+
         stage('Git Checkout') {
               steps {
                   gitCheckout(
@@ -18,4 +19,5 @@ pipeline {
                   )
              }   
          }
+       }
 }
