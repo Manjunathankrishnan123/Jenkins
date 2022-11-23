@@ -1,10 +1,14 @@
 @Library('jenkins-library@main')_
 
 pipeline {
-     agent any
-     stage{
-        steps{
-             test()
-             }
-     }
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                test()
+            }
+        }
+    }
 }
+
