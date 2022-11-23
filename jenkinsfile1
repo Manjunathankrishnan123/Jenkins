@@ -8,15 +8,14 @@ pipeline {
             steps {
                 test()
             }
+          }
         }
-    }
-
         stage('Git Checkout') {
               steps {
                   gitCheckout(
                   branch: "main",
                   url: "https://github.com/Manjunathankrishnan123/Jenkins.gi"
                   )
-                 }   
-              }
+             }   
+         }
 }
