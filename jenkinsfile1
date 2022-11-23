@@ -1,0 +1,10 @@
+@Library('jenkins-library@main')_
+
+pipeline {
+     agent any
+     stage{
+        steps{
+             test()
+             }
+     }
+}
