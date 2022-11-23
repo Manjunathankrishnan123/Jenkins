@@ -11,11 +11,12 @@ pipeline {
         }
     }
 
-    stage('Git Checkout') {
-    gitCheckout(
-        branch: "main",
-        url: "https://github.com/Manjunathankrishnan123/Jenkins.git"
-    )
+        stage('Git Checkout') {
+              steps {
+                  gitCheckout(
+                  branch: "main",
+                  url: "https://github.com/Manjunathankrishnan123/Jenkins.gi"
+                  )
+                 }   
+              }
 }
-}
-
