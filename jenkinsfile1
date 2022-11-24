@@ -5,8 +5,10 @@ pipeline {
 
     stages {
         stage('Parameter') {
-           deriveJobParams()
-         }
+           steps {
+              deriveJobParams()
+            }
+          }
         stage('Hello') {
             steps {
                 test()
