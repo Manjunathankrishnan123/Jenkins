@@ -4,6 +4,9 @@ pipeline {
     agent any
 
     stages {
+        stage('Parameter') {
+           deriveJobParams()
+         }
         stage('Hello') {
             steps {
                 test()
