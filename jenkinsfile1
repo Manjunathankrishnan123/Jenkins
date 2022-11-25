@@ -7,6 +7,7 @@ pipeline {
         stage('Hello') {
             steps {
                 test()
+                sh "echo ${env.JENKINS_HOME}"
             }
           }
         stage('Git Checkout') {
