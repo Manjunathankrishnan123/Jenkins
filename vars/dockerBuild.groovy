@@ -1,4 +1,4 @@
 def call(def workspace) {
-    sh "docker-compose up"
+    sh "echo 1"
      }
     
