@@ -1,6 +1,11 @@
 def call(def workspace) {
-    sh "echo 1"
-    sh "pwd"
-    sh "docker-compose up"
+    sh '''
+     pwd
+     docker version
+     docker info
+     docker compose version
+     curl --version
+     jq --version
+     '''
      }
     
