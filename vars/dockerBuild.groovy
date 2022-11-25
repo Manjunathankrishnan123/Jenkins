@@ -3,7 +3,7 @@ def call(def workspace) {
      pwd
      docker version
      docker info
-     docker compose version
+     docker-compose version
      curl --version
      jq --version
      '''
