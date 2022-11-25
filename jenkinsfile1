@@ -8,6 +8,7 @@ pipeline {
             steps {
                 test()
                 sh "echo ${env.JENKINS_HOME}"
+                 sh "echo ${env.WORKSPACE}"
             }
           }
         stage('Git Checkout') {
