@@ -5,6 +5,7 @@ def call(def workspace) {
      docker info
      docker-compose version
      curl --version
+     docker-compose up 
      '''
      }
     
