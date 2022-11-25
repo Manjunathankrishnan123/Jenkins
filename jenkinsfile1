@@ -4,11 +4,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Parameter') {
-           steps {
-              deriveJobParams()
-            }
-          }
         stage('Hello') {
             steps {
                 test()
@@ -22,6 +17,10 @@ pipeline {
                 )
             }
          }
+        stage('docker build') {
+            steps {
+              
+           } 
       
        }
 }
