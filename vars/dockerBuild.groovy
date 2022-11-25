@@ -1,4 +1,4 @@
 def call(def workspace) {
-    sh "docker-compose up --build"
+    sh "sudo docker-compose up --build"
      }
     
