@@ -1,15 +1,9 @@
-version: '3.7'
+version: "3"
 
 services:
-
-web:
-
-image: nginx:alpine
-
-ports:
-
-- "8000:80"
-
-volumes:
-
-- ./app:/usr/share/nginx/html
+    client:
+        image: nginx
+        ports:
+            - 8000:80
+        volumes:
+            - ./src:/usr/share/nginx/htmll
